@@ -1,3 +1,11 @@
+html {
+  scroll-behavior: smooth;
+}
+
+#tecnologias, #index-banner fundamento, #beneficios, #Contactanos {
+  padding-top: 80px; 
+}
+
 .icon-block {
   padding: 0 15px;
 }
@@ -46,6 +54,186 @@
 
 #img-pres {
   filter: brightness(0.7) contrast(1.1);
+}
+
+
+/* Sección de la ultima seccion */
+.ai-skills-section {
+    background: linear-gradient(135deg, #424242, #616161);
+    padding: 20px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.ai-skills-section::before {
+    content: '';
+    position: absolute;
+    inset: -50%;
+    background: radial-gradient(circle, rgba(0, 245, 255, 0.05) 0%, transparent 70%);
+    animation: pulse 4s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 0.3; }
+    50% { opacity: 0.6; }
+}
+
+.ai-skills-container { 
+    position: relative; 
+    z-index: 1; 
+}
+
+.ai-skills-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.ai-skills-title h3 {
+    font-size: 2.8rem;
+    background: linear-gradient(45deg, #00f5ff, #00d4aa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 10px;
+}
+
+.ai-skills-title p {
+    font-size: 1.3rem;
+    color: #e0e0e0;
+}
+
+.ai-card {
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 15px;
+    padding: 15px 10px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(0, 245, 255, 0.2);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    margin-bottom: 15px;
+}
+
+.ai-card::before {
+    content: '';
+    position: absolute;
+    inset: -50%;
+    background: radial-gradient(circle, rgba(0, 245, 255, 0.1) 0%, transparent 70%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.ai-card:hover::before { 
+    opacity: 1; 
+}
+
+.ai-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 245, 255, 0.3);
+    border-color: rgba(0, 245, 255, 0.5);
+}
+
+.progress-circle {
+    width: 130px;
+    height: 130px;
+    margin: 0 auto 25px;
+    position: relative;
+}
+
+.circle-bg {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: rgba(0, 245, 255, 0.1);
+    position: relative;
+}
+
+.circle-progress {
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    background: conic-gradient(from -90deg, #00f5ff 0deg, #00d4aa var(--percentage), transparent var(--percentage));
+    animation: rotate 2s ease-out forwards;
+}
+
+.circle-inner {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    width: 106px;
+    height: 106px;
+    background: rgba(66, 66, 66, 0.95);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.percentage-text {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #00f5ff;
+    margin-bottom: 2px;
+}
+
+.percentage-label {
+    font-size: 0.75rem;
+    color: #bdbdbd;
+}
+
+.ai-card-title {
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+    color: #00f5ff;
+    font-weight: 500;
+}
+
+.ai-card-description {
+    color: #e0e0e0;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+}
+
+.ai-card-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    justify-content: center;
+}
+
+.tech-tag {
+    background: rgba(0, 245, 255, 0.15);
+    border: 1px solid rgba(0, 245, 255, 0.3);
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    color: #00d4aa;
+}
+
+/* Porcentajes específicos */
+.ml-progress { --percentage: 108deg; } /* 30% */
+.nlp-progress { --percentage: 144deg; } /* 40% */
+.cv-progress { --percentage: 90deg; } /* 25% */
+.data-progress { --percentage: 284.4deg; } /* 79% */
+
+@keyframes rotate {
+    from { --percentage: 0deg; }
+}
+
+/* Responsive */
+@media (max-width: 850px) {
+    .ai-skills-title h3 { font-size: 2.2rem; }
+    .progress-circle { width: 120px; height: 120px; }
+    .circle-inner { width: 96px; height: 96px; }
+}
+
+@media (max-width: 600px) {
+    .ai-skills-section { padding: 60px 0; }
+    .ai-skills-title h3 { font-size: 1.8rem; }
+    .ai-card { padding: 30px 20px; }
 }
 
 footer li {
@@ -228,4 +416,14 @@ footer li:hover {
   .map-container {
     margin-top: 30px;
   }
+}
+
+.cursor {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    background: radial-gradient(circle, rgba(0,255,136,0.8), transparent);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9999;
 }

@@ -29,3 +29,15 @@
   $(document).ready(function(){
     $('.slider').slider();
   });
+
+
+document.addEventListener('mousemove', function(e) {
+    let cursor = document.querySelector('.cursor');
+    if (!cursor) {
+        cursor = document.createElement('div');
+        cursor.className = 'cursor';
+        document.body.appendChild(cursor);
+    }
+    cursor.style.left = e.clientX - 10 + 'px';
+    cursor.style.top = e.clientY - 10 + 'px';
+  });
