@@ -56,3 +56,17 @@
 #img-pres {
   filter: brightness(0.7) contrast(1.1);
 }
+/* Cuadros para los <li> en el footer */
+footer li {
+  display: inline-block;
+  background: #353333;
+  border-radius: 6px;
+  margin: 4px 8px;
+  padding: 6px 14px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+  transition: background 0.2s;
+}
+
+footer li:hover {
+  background: #e0e0e018;
+}
