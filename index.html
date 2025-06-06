@@ -5,7 +5,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
   <link rel="icon" href="img/icon.ico">
-  <title>Desarrollo de aplicaciones con IA</title>
+  <title>Code Intellect</title>
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -14,19 +14,20 @@
 </head>
 
 <body>
-  <nav class="grey darken-2" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">CodeIntellect</a>
+  <nav id="nav-site" class="grey darken-2" role="navigation">
+    <div class="nav-wrapper"><a href="#nav-site" class="brand-logo"><i class="material-icons">cloud</i>Code
+        Intellect</a>
       <ul class="right hide-on-med-and-down">
         <li><a href="#tecnologias">¿Por qué IA?</a></li>
         <li><a href="#index-banner fundamento">Fundamentos</a></li>
         <li><a href="#beneficios">Beneficios</a></li>
         <li><a href="#Contactanos">Contáctanos</a></li>
+        <li>
+          <a href="#!" onclick="toggleDarkMode()">
+            <i class="material-icons">brightness_4</i>
+          </a>
+        </li>
       </ul>
-
-      <ul id="nav-mobile" class="sidenav">
-        <li><a href="#">Navbar Link</a></li>
-      </ul>
-      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     </div>
   </nav>
   <div id="index-banner" class="parallax-container">
@@ -51,13 +52,13 @@
 
   <div id="tecnologias" class="container">
     <div class="section">
-      <h3 class="header center black-text">¿Por qué desarrollar aplicaciones con IA?</h3><br>
+      <h3 class="header center modo-texto">¿Por qué desarrollar aplicaciones con IA?</h3><br>
       <div class="row center-align equal-cards">
 
         <div class="col s12 m4 card-spacing">
           <div class="card z-depth-3 equal-height">
             <div class="card-content">
-              <h2 class="center black-text"><i class="medium material-icons">cached</i></h2>
+              <h2 class="center black-text"><i class="medium material-icons">autorenew</i></h2>
               <h5 class="card-title black-text"><strong>Automatización</strong></h5>
               <p class="flow-text grey-text text-darken-2">
                 La IA puede encargarse de tareas repetitivas como clasificar correos o analizar imágenes médicas,
@@ -70,7 +71,7 @@
         <div class="col s12 m4 card-spacing">
           <div class="card z-depth-3 equal-height">
             <div class="card-content">
-              <h2 class="center black-text"><i class="medium material-icons">cloud</i></h2>
+              <h2 class="center black-text"><i class="medium material-icons">insights</i></h2>
               <h5 class="card-title black-text"><strong>Decisiones Inteligentes</strong></h5>
               <p class="flow-text grey-text text-darken-2">
                 La IA analiza grandes volúmenes de datos y ayuda a tomar decisiones estratégicas basadas en patrones y
@@ -83,7 +84,7 @@
         <div class="col s12 m4 card-spacing">
           <div class="card z-depth-3 equal-height">
             <div class="card-content">
-              <h2 class="center black-text"><i class="medium material-icons">child_care</i></h2>
+              <h2 class="center black-text"><i class="medium material-icons">record_voice_over</i></h2>
               <h5 class="card-title black-text"><strong>Interacción Natural</strong></h5>
               <p class="flow-text grey-text text-darken-2">
                 Gracias al lenguaje natural y reconocimiento de voz, las apps pueden comunicarse con los usuarios de
@@ -139,245 +140,254 @@
   <hr>
   <br><br>
 
-<div id="index-banner fundamento" class="parallax-container1">
-  <div class="section no-pad-bot">
-    <div class="container">
-      <br><br>
-      <h1 class="header center white-text">Fundamentos del Desarrollo de Aplicaciones con IA</h1>
-      <div class="row center">
-        <h5 class="header-col-s12 white-text">
-          <strong>Explora los pilares esenciales para crear aplicaciones inteligentes impulsadas por inteligencia artificial</strong>
-        </h5>
+  <div id="index-banner fundamento" class="parallax-container1">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 class="header center white-text">Fundamentos del Desarrollo de Aplicaciones con IA</h1>
+        <div class="row center">
+          <h5 class="header-col-s12 white-text">
+            <strong>Explora los pilares esenciales para crear aplicaciones inteligentes impulsadas por inteligencia
+              artificial</strong>
+          </h5>
+        </div>
+
+        <div class="row cards-container">
+          <div class="col s12 m6 l4">
+            <div class="card white darken-1">
+              <div class="card-content white-text">
+                <h2 class="center black-text"><i class="medium material-icons">integration_instructions</i></h2>
+                <span class="card-title black-text">Integración de Modelos</span>
+                <p class="black-text">Incorporar modelos de IA en apps mejora su funcionalidad y eficiencia.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m6 l4">
+            <div class="card white darken-1">
+              <div class="card-content white-text">
+                <h2 class="center black-text"><i class="medium material-icons">memory</i></h2>
+                <span class="card-title black-text">Tecnologías Clave</span>
+                <p class="black-text">ML, PNL y visión artificial permiten construir experiencias inteligentes.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m6 l4">
+            <div class="card white darken-1">
+              <div class="card-content white-text">
+                <h2 class="center black-text"><i class="medium material-icons">auto_mode</i></h2>
+                <span class="card-title black-text">Beneficios Transformadores</span>
+                <p class="black-text">La IA automatiza procesos y mejora la experiencia del usuario.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m6 l4">
+            <div class="card white darken-1">
+              <div class="card-content white-text">
+                <h2 class="center black-text"><i class="medium material-icons">trending_up</i></h2>
+                <span class="card-title black-text">Escalabilidad Inteligente</span>
+                <p class="black-text">Las soluciones con IA se adaptan fácilmente al crecimiento de la aplicación.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m6 l4">
+            <div class="card white darken-1">
+              <div class="card-content white-text">
+                <h2 class="center black-text"><i class="medium material-icons">gavel</i></h2>
+                <span class="card-title black-text">Ética y Responsabilidad</span>
+                <p class="black-text">Diseñar con IA requiere considerar el uso justo, transparente y responsable de los
+                  datos.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m6 l4">
+            <div class="card white darken-1">
+              <div class="card-content white-text">
+                <h2 class="center black-text"><i class="medium material-icons">analytics</i></h2>
+                <span class="card-title black-text">Entrenamiento y Evaluación de Modelos</span>
+                <p class="black-text">Los modelos deben entrenarse con datos relevantes y evaluarse constantemente para
+                  asegurar precisión y confiabilidad.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br><br>
       </div>
-
-      <div class="row cards-container">
-        <div class="col s12 m6 l4">
-          <div class="card white darken-1">
-            <div class="card-content white-text">
-              <h2 class="center black-text"><i class="medium material-icons">integration_instructions</i></h2>
-              <span class="card-title black-text">Integración de Modelos</span>
-              <p class="black-text">Incorporar modelos de IA en apps mejora su funcionalidad y eficiencia.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col s12 m6 l4">
-          <div class="card white darken-1">
-            <div class="card-content white-text">
-              <h2 class="center black-text"><i class="medium material-icons">memory</i></h2>
-              <span class="card-title black-text">Tecnologías Clave</span>
-              <p class="black-text">ML, PNL y visión artificial permiten construir experiencias inteligentes.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col s12 m6 l4">
-          <div class="card white darken-1">
-            <div class="card-content white-text">
-              <h2 class="center black-text"><i class="medium material-icons">auto_mode</i></h2>
-              <span class="card-title black-text">Beneficios Transformadores</span>
-              <p class="black-text">La IA automatiza procesos y mejora la experiencia del usuario.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col s12 m6 l4">
-          <div class="card white darken-1">
-            <div class="card-content white-text">
-              <h2 class="center black-text"><i class="medium material-icons">trending_up</i></h2>
-              <span class="card-title black-text">Escalabilidad Inteligente</span>
-              <p class="black-text">Las soluciones con IA se adaptan fácilmente al crecimiento de la aplicación.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col s12 m6 l4">
-          <div class="card white darken-1">
-            <div class="card-content white-text">
-              <h2 class="center black-text"><i class="medium material-icons">gavel</i></h2>
-              <span class="card-title black-text">Ética y Responsabilidad</span>
-              <p class="black-text">Diseñar con IA requiere considerar el uso justo, transparente y responsable de los datos.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col s12 m6 l4">
-          <div class="card white darken-1">
-            <div class="card-content white-text">
-              <h2 class="center black-text"><i class="medium material-icons">analytics</i></h2>
-              <span class="card-title black-text">Entrenamiento y Evaluación de Modelos</span>
-              <p class="black-text">Los modelos deben entrenarse con datos relevantes y evaluarse constantemente para asegurar precisión y confiabilidad.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <br><br>
-    </div>
-  </div>
-
-  <div class="parallax">
-    <img id="imagen-editar" src="img/background1.png" alt="Fondo">
-  </div>
-</div>
-<br><br>
-
-<div id="beneficios" class="ai-skills-section">
-  <div class="container ai-skills-container">
-    <div class="ai-skills-title">
-      <h3>Beneficios del Desarrollo de Aplicaciones con IA</h3>
     </div>
 
-    <div class="row">
-      <div class="col s12 m6 l6">
-        <div class="ai-card">
-          <div class="progress-circle">
-            <div class="circle-bg">
-              <div class="circle-progress ml-progress"></div>
-              <div class="circle-inner">
-                <div class="percentage-text">30%</div>
-              </div>
-            </div>
-          </div>
-          <h4 class="ai-card-title">Reducción de Costos</h4>
-          <p class="ai-card-description">
-            Optimización de recursos y procesos que disminuyen el gasto total en desarrollo
-          </p>
-        </div>
+    <div class="parallax">
+      <img id="imagen-editar" src="img/background1.png" alt="Fondo">
+    </div>
+  </div>
+  <br><br>
+
+  <div id="beneficios" class="ai-skills-section">
+    <div class="container ai-skills-container">
+      <div class="ai-skills-title">
+        <h3>Beneficios del Desarrollo de Aplicaciones con IA</h3>
       </div>
 
-      <div class="col s12 m6 l6">
-        <div class="ai-card">
-          <div class="progress-circle">
-            <div class="circle-bg">
-              <div class="circle-progress nlp-progress"></div>
-              <div class="circle-inner">
-                <div class="percentage-text">40%</div>
+      <div class="row">
+        <div class="col s12 m6 l6">
+          <div class="ai-card">
+            <div class="progress-circle">
+              <div class="circle-bg">
+                <div class="circle-progress ml-progress"></div>
+                <div class="circle-inner">
+                  <div class="percentage-text">30%</div>
+                </div>
               </div>
             </div>
+            <h4 class="ai-card-title">Reducción de Costos</h4>
+            <p class="ai-card-description">
+              Optimización de recursos y procesos que disminuyen el gasto total en desarrollo
+            </p>
           </div>
-          <h4 class="ai-card-title">Ahorro de Tiempo</h4>
-          <p class="ai-card-description">
-            Aceleración del ciclo de vida del desarrollo de software desde el concepto hasta la entrega
-          </p>
         </div>
-      </div>
 
-      <div class="col s12 m6 l6">
-        <div class="ai-card">
-          <div class="progress-circle">
-            <div class="circle-bg">
-              <div class="circle-progress cv-progress"></div>
-              <div class="circle-inner">
-                <div class="percentage-text">25%</div>
+        <div class="col s12 m6 l6">
+          <div class="ai-card">
+            <div class="progress-circle">
+              <div class="circle-bg">
+                <div class="circle-progress nlp-progress"></div>
+                <div class="circle-inner">
+                  <div class="percentage-text">40%</div>
+                </div>
               </div>
             </div>
+            <h4 class="ai-card-title">Ahorro de Tiempo</h4>
+            <p class="ai-card-description">
+              Aceleración del ciclo de vida del desarrollo de software desde el concepto hasta la entrega
+            </p>
           </div>
-          <h4 class="ai-card-title">Mejora de Calidad</h4>
-          <p class="ai-card-description">
-            Software más fiable y robusto gracias a la detección temprana y prevención de errores
-          </p>
         </div>
-      </div>
 
-      <div class="col s12 m6 l6">
-        <div class="ai-card">
-          <div class="progress-circle">
-            <div class="circle-bg">
-              <div class="circle-progress data-progress"></div>
-              <div class="circle-inner">
-                <div class="percentage-text">79%</div>
+        <div class="col s12 m6 l6">
+          <div class="ai-card">
+            <div class="progress-circle">
+              <div class="circle-bg">
+                <div class="circle-progress cv-progress"></div>
+                <div class="circle-inner">
+                  <div class="percentage-text">25%</div>
+                </div>
               </div>
             </div>
+            <h4 class="ai-card-title">Mejora de Calidad</h4>
+            <p class="ai-card-description">
+              Software más fiable y robusto gracias a la detección temprana y prevención de errores
+            </p>
           </div>
-          <h4 class="ai-card-title">Proyección del Mercado</h4>
-          <p class="ai-card-description">
-            Valor proyectado para el mercado de la IA en el desarrollo de software para 2030
-          </p>
+        </div>
 
+        <div class="col s12 m6 l6">
+          <div class="ai-card">
+            <div class="progress-circle">
+              <div class="circle-bg">
+                <div class="circle-progress data-progress"></div>
+                <div class="circle-inner">
+                  <div class="percentage-text">79%</div>
+                </div>
+              </div>
+            </div>
+            <h4 class="ai-card-title">Proyección del Mercado</h4>
+            <p class="ai-card-description">
+              Valor proyectado para el mercado de la IA en el desarrollo de software para 2030
+            </p>
+
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
   <br><br>
 
   <footer id="Contactanos" class="page-footer grey darken-2 footer-wave">
-        <i class="material-icons floating-icon">code</i>
-        <div class="container">
-            <div class="row">
-                <div class="col l6 s12">
-                    <div class="team-card">
-                        <h5 class="white-text section-title">Equipo de trabajo</h5>
-                        <p class="grey-text text-lighten-4">Somos un equipo de trabajo de aprendices SENA enfocados en un proyecto de desarrollo de páginas con IA para agilizar el proceso de estas mismas.</p>
-                        <div class="chip white-text" style="background: rgba(255,255,255,0.2);">
-                            <i class="material-icons left">school</i>
-                            SENA - Innovación Tecnológica
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col l3 s12">
-                    <div class="links-section">
-                        <h5 class="white-text section-title">Herramientas IA</h5>
-                        <ul style="list-style: none; padding: 0;">
-                            <li><a class="white-text" href="https://es.wix.com/ai-website-builder">
-                                <i class="material-icons left">web</i>WIX
-                            </a></li>
-                            <li><a class="white-text" href="https://www.renderforest.com/es/ai-website-builder">
-                                <i class="material-icons left">forest</i>RENDERFOREST
-                            </a></li>
-                            <li><a class="white-text" href="https://www.hostinger.com/co/creador-de-paginas-web-con-ia">
-                                <i class="material-icons left">cloud</i>HOSTINGER
-                            </a></li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="col l3 s12">
-                    <h5 class="white-text section-title">Miembros del Equipo</h5>
-                    <div class="member-item">
-                        <i class="material-icons left">person</i>
-                        <span class="white-text">TATIANA CARVAJAL VARGAS</span>
-                    </div>
-                    <div class="member-item">
-                        <i class="material-icons left">person</i>
-                        <span class="white-text">ESTEBAN COLORADO VARGAS</span>
-                    </div>
-                    <div class="member-item">
-                        <i class="material-icons left">person</i>
-                        <span class="white-text">NICOLLE VANESSA MELENDEZ GARCIA</span>
-                    </div>
-                </div>
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <div class="team-card">
+            <h5 class="white-text section-title">Equipo de trabajo</h5>
+            <p class="grey-text text-lighten-4">Somos un equipo de trabajo de aprendices SENA enfocados en un proyecto
+              de desarrollo de páginas con IA para agilizar el proceso de estas mismas.</p>
+            <div class="chip white-text" style="background: rgba(255,255,255,0.2);">
+              <i class="material-icons left">school</i>
+              SENA - Innovación Tecnológica
             </div>
-            
-            <div class="row">
-                <div class="col s12">
-                    <div class="map-container">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3145.3736928757858!2d-76.19212592628212!3d4.091640346639033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e39c5e7f9266933%3A0x4bc14d4dbcf12819!2sCra.%2030%20%23%2015-10%2C%20Tulu%C3%A1%2C%20Valle%20del%20Cauca!5e1!3m2!1ses!2sco!4v1749079807362!5m2!1ses!2sco"
-                            width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade">
-                        </iframe>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
-        
-        <div class="footer-copyright">
-            <div class="container">
-                <div class="row">
-                    <div class="col s6">
-                        Hecho con <i class="material-icons tiny red-text">favorite</i> por 
-                        <a class="orange-text text-lighten-3" href="https://www.sena.edu.co/es-co/Paginas/default.aspx">Aprendices SENA</a>
-                    </div>
-                    <div class="col s6 right-align">
-                        <span class="grey-text text-lighten-4">© 2025 Proyecto Desarrollo de aplicaciones con IA-SENA</span>
-                    </div>
-                </div>
-            </div>
+
+        <div class="col l3 s12">
+          <div class="links-section">
+            <h5 class="white-text section-title">Herramientas IA</h5>
+            <ul style="list-style: none; padding: 0;">
+              <li><a class="white-text" href="https://es.wix.com/ai-website-builder">
+                  <i class="material-icons left">web</i>WIX
+                </a></li>
+              <li><a class="white-text" href="https://www.renderforest.com/es/ai-website-builder">
+                  <i class="material-icons left">forest</i>RENDERFOREST
+                </a></li>
+              <li><a class="white-text" href="https://www.hostinger.com/co/creador-de-paginas-web-con-ia">
+                  <i class="material-icons left">cloud</i>HOSTINGER
+                </a></li>
+            </ul>
+          </div>
         </div>
-    </footer>
+
+        <div class="col l3 s12">
+          <h5 class="white-text section-title">Miembros del Equipo</h5>
+          <div class="member-item">
+            <i class="material-icons left">person</i>
+            <span class="white-text">TATIANA CARVAJAL VARGAS</span>
+          </div>
+          <div class="member-item">
+            <i class="material-icons left">person</i>
+            <span class="white-text">ESTEBAN COLORADO VARGAS</span>
+          </div>
+          <div class="member-item">
+            <i class="material-icons left">person</i>
+            <span class="white-text">NICOLLE VANESSA MELENDEZ GARCIA</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col s12">
+          <div class="map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3145.3736928757858!2d-76.19212592628212!3d4.091640346639033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e39c5e7f9266933%3A0x4bc14d4dbcf12819!2sCra.%2030%20%23%2015-10%2C%20Tulu%C3%A1%2C%20Valle%20del%20Cauca!5e1!3m2!1ses!2sco!4v1749079807362!5m2!1ses!2sco"
+              width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-copyright">
+      <div class="container">
+        <div class="row">
+          <div class="col s6">
+            Hecho con <i class="material-icons tiny red-text">favorite</i> por
+            <a class="orange-text text-lighten-3" href="https://www.sena.edu.co/es-co/Paginas/default.aspx">Aprendices
+              SENA</a>
+          </div>
+          <div class="col s6 right-align">
+            <span class="grey-text text-lighten-4">© 2025 Proyecto Desarrollo de aplicaciones con IA-SENA</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script>
+  function toggleDarkMode() {
+    document.body.classList.toggle('dark-mode');
+  }
+</script>
 </body>
 
 </html>

@@ -427,3 +427,25 @@ footer li:hover {
     pointer-events: none;
     z-index: 9999;
 }
+
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+body.dark-mode nav {
+  background-color: #1e1e1e;
+}
+
+body.dark-mode i.material-icons {
+  color: #ffffff;
+}
+
+/* Textos que deben cambiar a blanco en modo oscuro */
+body.dark-mode .modo-texto {
+  color: white !important;
+}
+
+body.dark-mode .material-icons {
+  color: #000000 !important;
+}
