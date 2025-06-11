@@ -14,10 +14,13 @@ html {
  font-size: inherit;
 }
 
+
+/* Cards */
 .card-spacing {
- padding: 0 10px;
- display: flex;
+   padding: 0;
+   margin-bottom: 15px;
 }
+
 
 .equal-height {
  display: flex;
@@ -46,6 +49,14 @@ html {
 
 .center-text {
  text-align: justify;
+}
+
+
+.parallax-container {
+  height: auto !important;
+  min-height: 600px;
+  position: relative;
+  overflow: hidden;
 }
 
 .parallax img {
@@ -436,4 +447,22 @@ body.dark-mode .modo-texto {
 
 body.dark-mode .material-icons {
  color: #000000 !important;
+}
+
+/* Ajustes para el título en móvil */
+@media only screen and (max-width: 600px) {
+.brand-logo {
+   font-size: 1.2rem !important;
+   white-space: nowrap;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   max-width: 150px;
+   display: inline-block;
+   vertical-align: middle;
+}
+
+.brand-logo i.material-icons {
+   font-size: 1.5rem !important;
+   vertical-align: middle;
+}
 }
